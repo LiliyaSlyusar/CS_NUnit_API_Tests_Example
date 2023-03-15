@@ -1,0 +1,33 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+
+# Visual Studio files
+*.user
+*.suo
+*.cache
+*.sln.docstates
+.vs/
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Resharper files
+_ReSharper*
+
+# NuGet packages
+packages/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+
+# NCrunch
+*.ncrunch*
+.*crunch*.local.xml
+
+# Build results
+**/bin/
+**/obj/
