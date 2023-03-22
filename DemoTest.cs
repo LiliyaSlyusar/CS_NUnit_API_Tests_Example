@@ -98,13 +98,13 @@ public class Tests : BaseApiTest
 
         // Set the request headers
         request.AddHeader("accept", "*/*");
-
+        
         // Execute the request and get the response
         var response = Client?.Execute(request);
 
         // Get the actual owners from the response body
-        var actualOwners = SimpleJson.DeserializeObject(response!.Content);
-        if (actualOwners is List<Owner> actualOwnersDeserialised)
+        var actualOwners = SimpleJson.DeserializeObject(response!.Content); //pm.response.json()
+        if (actualOwners is List<Owner>)
         {
             // Check that the actual owners contain the expected owners
             Assert.That(actualOwners, Is.EquivalentTo(expectedOwners));
